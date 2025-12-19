@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancer Landing Page</title>
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <!-- navbar -->
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
+    <div class=" flex justify-between items-center py-4">
+        
+        <div class="flex justify-center items-center gap-7">
+            <h1 class="w-full text-xl font-bold   text-[#25A4AD]">
+            Payme
+            </h1>
+
+            <div class="hidden sm:flex gap-8">
+            <a href="#" class="text-gray-700 hover:text-[#25A4AD] text-sm  transition">Home</a>
+            <a href="#" class="text-gray-700 hover:text-[#25A4AD] text-sm transition">About</a>
+            <a href="#" class="text-gray-700 hover:text-[#25A4AD] text-sm transition">Services</a>
+            <a href="#" class="text-gray-700 hover:text-[#25A4AD] text-sm transition">Contact</a>
+            </div>
+        </div>
+       
+        <div class="flex items-center gap-4 xl:pr-0 lg:pr-5">
+          <a href="" class="px-4 py-2 sm:flex hidden  text-sm font-medium hover:text-[#25A4AD] text-gray-700  ">
+            Sign In
+          </a>
+          <a href="" class="px-4 py-2 sm:flex hidden text-sm font-medium hover:text-black text-white bg-[#25A4AD]  rounded hover:bg-[#6dd2d9] transition">
+            Sign Up
+          </a>
+          
+        </div>
+        <img class="absolute w-8 lg:flex hidden rotate-180 top-0 right-0" src="./images/shape.png" alt="">
+
+        <!-- Mobile menu button -->
+        <button id="menuBtn" class="sm:hidden text-gray-700 text-2xl focus:outline-none">
+          ☰
+        </button>
+ 
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class=" sm:hidden bg-white hover:bg-[#25A4AD] border-t-2 flex-col gap-4 flex border-gray-200">
+      <a href="#" class="text-gray-700 hover:text-[#25A4AD] text-sm  transition">Home</a>
+      <a href="#" class="text-gray-700 hover:text-[#25A4AD] text-sm  transition">About</a>
+      <a href="#" class="text-gray-700 hover:text-[#25A4AD] text-sm  transition">Services</a>
+      <a href="#" class="text-gray-700 hover:text-[#25A4AD] text-sm  transition">Contact</a>
+       <a href="" class="px-4 py-2   text-sm font-medium hover:text-[#25A4AD] text-gray-700  ">
+            Sign In
+          </a>
+          <a href="" class="px-4 py-2  text-sm font-medium hover:text-black text-white bg-[#25A4AD]  rounded hover:bg-[#6dd2d9] transition">
+            Sign Up
+          </a>
+    </div>
+  </nav>
+    <!-- navbar -->
+  
+ <!-- zero section -->
+<section class=" text-black">
+    <div class="w-full mx-auto px-4 sm:px-6 lg:px-30  flex flex-col-reverse lg:flex-row items-center ">
+
+      <!-- Left Content -->
+      <div class="lg:w-1/2 text-center  pl-28 lg:text-left">
+        <img class="w-8 rotate-180 relative right-50% " src="./images/shape.png" alt="">
+        <h1 class="text-4xl sm:text-8xl  font-thin items-end  ">
+         Providing <br> Best <br>
+        </h1>
+        <p class="text-[#25A4AD] sm:text-7xl font-semibold text-4xl mb-6 ">WEB Services</p>
+
+        <p class="text-lg text-black mb-8 ">
+        Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no up as.        </p>
+        
+        <div class="flex justify-center lg:justify-start gap-4">
+          <a href="" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition">
+            Get Started
+          </a>
+          <a href="" class="border border-white font-semibold px-6 py-3 rounded-md hover:bg-white hover:text-blue-600 transition">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="lg:w-3/6 flex justify-start">
+        <img src="./images/main-image.png" 
+             class="rounded-lg  ">
+      </div>
+    </div>
+  </section>
+ <!-- zero section -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+//  mobile
+    document.getElementById("menuBtn").addEventListener("click", function() {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
